@@ -1,0 +1,284 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.layout
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.header
+{
+    position: relative;
+    display: flex;
+    height: 56px;
+    background-color: #212121;
+    align-items: center;
+}
+
+.bottom
+{
+    display: flex;
+    height: 100%;
+}
+
+.my-navbar
+{
+    background-color: #212121;
+    height: 100%;
+    width: 75px; /**/
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #181818;
+    height: 100%;
+    flex: 1;
+    overflow-y: scroll; /**/
+}
+
+.menu
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0 10px;
+}
+
+.logo-a
+{
+    display: block;
+    width: 130px;
+    height: 100%;
+    margin: 0 10px;
+}
+
+.big-logo
+{
+    background-image: url('./images/YouTube-big-logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.search-group > input
+{
+    outline: none;
+    border: none;
+    background-color: #121212;
+    border: 1px solid #323232;
+    border-right: none;
+    padding: 5px 10px;
+    color: #ffffff;
+    width: 75%;
+}
+
+.search-btn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #323232;
+    width: 10%;
+    cursor: pointer;
+}
+
+.search-group
+{
+    flex: 8;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options
+{
+    flex: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item
+{
+    flex: 1;
+    color: #ffffff;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5vmax;
+    margin: 0;
+}
+
+.side-options
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+}
+
+.item2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1em; /**/
+    flex: 1;
+    cursor: pointer;
+    transition: .1s;
+    width: 100%;
+}
+
+.item2:hover
+{
+    background-color: #4e4e4e;
+}
+
+.text
+{
+    font-size: 1em; /**/
+}
+
+.inner-item
+{
+    margin: 2px 0;
+}
+
+.box
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 30px 20px !important; /**/
+    height: 30%;
+    display: none !important;
+}
+
+.video
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 10px; /**/
+    height: 100%;
+}
+
+.img
+{
+    position: relative;
+    width: 100%;
+    min-width: 240px; 
+    /*padding 是根據 寬度決定*/
+    padding-bottom: 56.25%; /*16:9*/
+}
+
+.img>img
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.info
+{
+    display: flex;
+    width: 100%;
+    flex: 1;
+}
+
+.v-pic
+{
+    flex: 2;
+}
+
+.v-txt
+{
+    flex: 8;
+}
+
+.v-head
+{
+    /* background-image: url("https://yt3.ggpht.com/ytc/AKedOLRuKSudAjDirwPLyBiqDKQId-yRLaTCd6TrTN5NRg=s68-c-k-c0x00ffffff-no-rj"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+.v-main
+{
+    color: #ffffff;
+    font-size: 0.9em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.v-subtxt
+{
+    color: #aaaaaa;
+    font-size: 0.5em;
+}
+
+@media(max-width: 992px)
+{
+    .my-navbar{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -75px;
+    }
+}
+
+/*below + container padding-bottom: 65px */
+@media(max-width: 576px)
+{
+    .options
+    {
+        display: none;
+    }
+
+    .logo-a
+    {
+        width: 100px;
+        margin: 0;
+    }
+
+    input
+    {
+        font-size: initial;
+    }
+}
+
+/*
+    image
+        1. background image -> div -> css
+        2. img tag -> html, css 
+*/
